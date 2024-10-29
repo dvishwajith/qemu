@@ -20,6 +20,11 @@ config ISA_TESTDEV
     default y if TEST_DEVICES
     depends on ISA_BUS
 
+config PCI_ECHO
+    bool
+    default y if TEST_DEVICES
+    depends on PCI
+
 config PCI_TESTDEV
     bool
     default y if TEST_DEVICES
